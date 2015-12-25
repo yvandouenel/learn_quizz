@@ -68,8 +68,6 @@ drupal_static_reset('element_info');
 bootstrap_include('bootstrap', 'includes/alter.inc');
 
 function bootstrap_short_answer_user_answer($variables) {
-  dpm($variables);
-  dpm($node);
   $answer = $variables['answer'];
   $correct = $variables['correct'];
   $header = array(t('Correct Answer'), t('User Answer'));
