@@ -66,11 +66,3 @@ drupal_static_reset('element_info');
  * they are properly detected when drupal_alter() is invoked.
  */
 bootstrap_include('bootstrap', 'includes/alter.inc');
-
-function bootstrap_short_answer_user_answer($variables) {
-  $answer = $variables['answer'];
-  $correct = $variables['correct'];
-  $header = array(t('Correct Answer'), t('User Answer'));
-  $row = array(array($correct, $answer));
-  return theme('table', array('header' => $header, 'rows' => $row));
-}
