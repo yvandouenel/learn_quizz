@@ -10,7 +10,7 @@
 function og_example_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'message-og_new_content-field_node_reference'
+  // Exported field_instance: 'message-og_new_content-field_node_reference'.
   $field_instances['message-og_new_content-field_node_reference'] = array(
     'bundle' => 'og_new_content',
     'default_value' => NULL,
@@ -68,7 +68,7 @@ function og_example_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-group-body'
+  // Exported field_instance: 'node-group-body'.
   $field_instances['node-group-body'] = array(
     'bundle' => 'group',
     'default_value' => NULL,
@@ -81,6 +81,12 @@ function og_example_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 1,
+      ),
+      'question' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -97,7 +103,10 @@ function og_example_field_default_field_instances() {
     'label' => 'Body',
     'required' => FALSE,
     'settings' => array(
+      'context' => '',
       'display_summary' => TRUE,
+      'dnd_enabled' => 0,
+      'mee_enabled' => 0,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -113,7 +122,7 @@ function og_example_field_default_field_instances() {
     'widget_type' => 'text_textarea_with_summary',
   );
 
-  // Exported field_instance: 'node-group-group_group'
+  // Exported field_instance: 'node-group-group_group'.
   $field_instances['node-group-group_group'] = array(
     'bundle' => 'group',
     'default_value' => array(
@@ -125,12 +134,15 @@ function og_example_field_default_field_instances() {
     'description' => 'Determine if this is an OG group.',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'question' => array(
         'label' => 'above',
-        'module' => 'og_ui',
-        'settings' => array(
-          'field_name' => FALSE,
-        ),
-        'type' => 'og_group_subscribe',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -171,7 +183,7 @@ function og_example_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-post-body'
+  // Exported field_instance: 'node-post-body'.
   $field_instances['node-post-body'] = array(
     'bundle' => 'post',
     'default_value' => NULL,
@@ -184,6 +196,12 @@ function og_example_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 1,
+      ),
+      'question' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -200,7 +218,10 @@ function og_example_field_default_field_instances() {
     'label' => 'Body',
     'required' => FALSE,
     'settings' => array(
+      'context' => '',
       'display_summary' => TRUE,
+      'dnd_enabled' => 0,
+      'mee_enabled' => 0,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -216,7 +237,7 @@ function og_example_field_default_field_instances() {
     'widget_type' => 'text_textarea_with_summary',
   );
 
-  // Exported field_instance: 'node-post-og_group_ref'
+  // Exported field_instance: 'node-post-og_group_ref'.
   $field_instances['node-post-og_group_ref'] = array(
     'bundle' => 'post',
     'default_value' => NULL,
@@ -230,6 +251,12 @@ function og_example_field_default_field_instances() {
         'settings' => array(),
         'type' => 'og_list_default',
         'weight' => 1,
+      ),
+      'question' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
