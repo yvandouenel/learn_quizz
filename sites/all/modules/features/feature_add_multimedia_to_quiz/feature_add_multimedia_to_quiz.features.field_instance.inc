@@ -312,7 +312,7 @@ function feature_add_multimedia_to_quiz_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -365,10 +365,14 @@ function feature_add_multimedia_to_quiz_field_default_field_instances() {
         'weight' => 1,
       ),
       'question' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'atom_reference',
+        'settings' => array(
+          'link' => 0,
+          'override' => 0,
+        ),
+        'type' => 'full',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',

@@ -1,8 +1,10 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Feature add multimedia to quiz feature.
  */
+
+include_once 'feature_add_multimedia_to_quiz.features.inc';
 
 /**
  * Implements hook_node_view()
