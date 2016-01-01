@@ -1624,6 +1624,6 @@ body.navbar-is-fixed-top.navbar-administration.navbar-horizontal.navbar-tray-ope
 body.navbar-tray-open.navbar-vertical.navbar-fixed{margin-left:24rem}
 #navbar-administration.navbar-oriented .navbar-tray-vertical{width:24rem}
 body{background-color:#fff}
-.field-name-field-son{display:none}
-.quiz-report .field-name-field-son{display:block}
+.field-name-field-explanation,.field-name-field-son{display:none}
+.quiz-report .field-name-field-explanation,.quiz-report .field-name-field-son{display:block}
 article.node-quiz{float:left;width:45%;margin-right:5px}
